@@ -1,0 +1,45 @@
+ICAR (SAPA) cross-validated model comparison: EAP-plugin vs posterior-predictive IMV
+Doria Xiao, July 2026. Produced by icar_cv_protocol.R (seed 7).
+
+Data: IRW table icar_sapa (Condon & Revelle SAPA data). Subtests with a
+documented 6-alternative format: Letter-Number (9 items) and Matrix
+Reasoning (11 items). All respondents with at least one observed response
+in the subtest; planned missingness ~63-73% within subtest (persons answer
+2-3 items on average). 5-fold cross-validation by person.
+
+Models per fold: Rasch, 2PL, 2.5PL (2PL with g fixed at 1/6) via mirt;
+IPO-U and IPO-K via IPO-IRT Utilities.R (masked likelihood, defaults).
+
+Each cell "A -> B" is the out-of-sample IMV of model B against baseline A
+(positive favours B), averaged over folds, with the fold SD in parentheses.
+Held-out predictions are leave-one-item-out, computed identically for all
+models on a common theta grid, under two protocols:
+  EAP-plugin : ICC evaluated at the person's EAP point estimate
+  post-pred  : ICC integrated over the person's full posterior
+
+===== Letter-Number (K = 6), 5-fold CV, N = 94700 =====
+Rasch  -> IPO-K  : EAP-plugin -0.00318 (sd 0.00132) | post-pred +0.00273 (sd 0.00070)
+2PL    -> IPO-K  : EAP-plugin -0.00395 (sd 0.00103) | post-pred +0.00084 (sd 0.00054)
+2.5PL  -> IPO-K  : EAP-plugin +0.00141 (sd 0.00054) | post-pred -0.00006 (sd 0.00007)
+IPO-U  -> IPO-K  : EAP-plugin +0.00100 (sd 0.00050) | post-pred +0.00150 (sd 0.00026)
+Rasch  -> 2PL    : EAP-plugin +0.00077 (sd 0.00060) | post-pred +0.00189 (sd 0.00039)
+2.5PL  -> IPO-U  : EAP-plugin +0.00042 (sd 0.00053) | post-pred -0.00156 (sd 0.00029)
+hw estimates: IPO-U mean 0.422 | IPO-K mean 0.590
+
+===== Matrix Reasoning (K = 6), 5-fold CV, N = 92556 =====
+Rasch  -> IPO-K  : EAP-plugin -0.00696 (sd 0.00088) | post-pred +0.00146 (sd 0.00038)
+2PL    -> IPO-K  : EAP-plugin -0.00780 (sd 0.00100) | post-pred -0.00020 (sd 0.00040)
+2.5PL  -> IPO-K  : EAP-plugin +0.00069 (sd 0.00027) | post-pred -0.00009 (sd 0.00018)
+IPO-U  -> IPO-K  : EAP-plugin +0.00296 (sd 0.00043) | post-pred +0.00146 (sd 0.00045)
+Rasch  -> 2PL    : EAP-plugin +0.00085 (sd 0.00075) | post-pred +0.00165 (sd 0.00043)
+2.5PL  -> IPO-U  : EAP-plugin -0.00226 (sd 0.00032) | post-pred -0.00155 (sd 0.00041)
+hw estimates: IPO-U mean 0.010 | IPO-K mean 0.025
+
+Reading notes:
+- The verdict on IPO-K vs Rasch reverses between protocols on both subtests.
+  Under posterior-predictive evaluation the out-of-sample ranking agrees with
+  in-sample BIC; under EAP-plugin it does not.
+- IPO-K > IPO-U in every cell (both subtests, both protocols).
+- The sanity pair Rasch -> 2PL is positive and stable under both protocols.
+- hw: a real hesitation band on Letter-Number, essentially none on Matrix
+  Reasoning.

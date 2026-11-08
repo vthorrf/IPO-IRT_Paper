@@ -1,0 +1,17 @@
+Boundary cases for the IPO-IRT empirical section. 2026-11-05
+
+art (Author Recognition Test, IRW table 'art'): N = 1402, J = 50, observed cells 70100; response values 0/1
+  item p-values: min 0.120, max 0.663; items below the 0.25 floor: 31 of 50
+  items with zero correct responses: none
+  decile 1 respondents, mean accuracy on the five hardest items (Saul Bellow, Umberto Eco, Willa Cather, Bernard Malamud, Jane Smiley): 0.006
+  decile 2 respondents, mean accuracy on the five hardest items (Saul Bellow, Umberto Eco, Willa Cather, Bernard Malamud, Jane Smiley): 0.004
+  logLik: IPO-U with floor 1/4 = -33474.6 (h = 0.841); IPO-U with floor 1/1000 = -28461.0 (h = 4.000); Rasch = -28384.3
+  gap to Rasch: 5090.3 with the 1/4 floor, 76.7 with the floor removed
+
+Shipley Vocabulary (IRW table 'himmelstein-shipley_vocabulary-2025', four alternatives): N = 1187, J = 40, observed cells 47480; response values 0/1
+  item p-values: min 0.000, max 1.000; items below the 0.25 floor: 1 of 40
+  items with zero correct responses: shipley_vocab_16
+  decile 1 respondents, mean accuracy on the five hardest items (shipley_vocab_16, shipley_vocab_38, shipley_vocab_39, shipley_vocab_37, shipley_vocab_36): 0.158
+  decile 2 respondents, mean accuracy on the five hardest items (shipley_vocab_16, shipley_vocab_38, shipley_vocab_39, shipley_vocab_37, shipley_vocab_36): 0.190
+  decile 1, five hardest items with any correct response (shipley_vocab_38, shipley_vocab_39, shipley_vocab_37, shipley_vocab_36, shipley_vocab_40): 0.192
+  decile 2, five hardest items with any correct response (shipley_vocab_38, shipley_vocab_39, shipley_vocab_37, shipley_vocab_36, shipley_vocab_40): 0.230

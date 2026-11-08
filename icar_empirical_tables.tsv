@@ -1,0 +1,37 @@
+TABLE 1. Model fit on the ICAR subtests (full sample)
+Subtest	Model	logLik	Parameters	dAIC	dBIC	dHQ	h	SE(h)	Boundary
+Letter-Number	Rasch	-191441.2	10	743.0	667.3	720.0			
+Letter-Number	2PL	-191165.7	18	207.9	207.9	207.9			
+Letter-Number	2.5PL	-191061.7	18	0.0	0.0	0.0			
+Letter-Number	IPO-U	-191303.6	10	467.7	392.0	444.6	0.421941	0.025160	none
+Letter-Number	IPO-K	-191072.9	18	22.3	22.3	22.3	0.632547	0.049475	none
+Letter-Number	IPO-U vs IPO-K	LR = 461.4 on 8 df
+Matrix Reasoning	Rasch	-171887.7	12	327.2	232.8	298.4			
+Matrix Reasoning	2PL	-171750.6	22	73.1	73.1	73.1			
+Matrix Reasoning	2.5PL	-171714.1	22	0.0	0.0	0.0			
+Matrix Reasoning	IPO-U	-171899.3	12	350.4	256.0	321.7	4.000000		h
+Matrix Reasoning	IPO-K	-171729.5	22	30.9	30.9	30.9	1.184374	0.425680	k
+Matrix Reasoning	IPO-U vs IPO-K	LR = 339.5 on 10 df
+
+TABLE S5. Five-fold cross-validated pairwise IMV on the ICAR subtests, both prediction protocols
+Subtest	Baseline	Alternative	EAP-plugin mean	EAP-plugin SD	EAP folds favoring alternative	Posterior-predictive mean	Posterior-predictive SD	PP folds favoring alternative
+Letter-Number	IPO-U	IPO-K	+0.0012	0.0005	5/5	+0.0015	0.0003	5/5
+Letter-Number	IPO-U	Rasch	+0.0042	0.0009	5/5	-0.0012	0.0005	0/5
+Letter-Number	IPO-U	2PL	+0.0050	0.0007	5/5	+0.0007	0.0004	5/5
+Letter-Number	IPO-U	2.5PL	-0.0004	0.0005	2/5	+0.0016	0.0003	5/5
+Letter-Number	IPO-K	Rasch	+0.0030	0.0013	5/5	-0.0027	0.0007	0/5
+Letter-Number	IPO-K	2PL	+0.0038	0.0011	5/5	-0.0008	0.0005	0/5
+Letter-Number	IPO-K	2.5PL	-0.0016	0.0003	0/5	+0.0001	0.0001	4/5
+Letter-Number	Rasch	2PL	+0.0008	0.0006	4/5	+0.0019	0.0004	5/5
+Letter-Number	Rasch	2.5PL	-0.0046	0.0012	0/5	+0.0028	0.0007	5/5
+Letter-Number	2PL	2.5PL	-0.0054	0.0012	0/5	+0.0009	0.0005	5/5
+Matrix Reasoning	IPO-U	IPO-K	+0.0064	0.0006	5/5	+0.0020	0.0003	5/5
+Matrix Reasoning	IPO-U	Rasch	+0.0095	0.0011	5/5	-0.0001	0.0007	3/5
+Matrix Reasoning	IPO-U	2PL	+0.0103	0.0010	5/5	+0.0016	0.0004	5/5
+Matrix Reasoning	IPO-U	2.5PL	+0.0018	0.0003	5/5	+0.0015	0.0004	5/5
+Matrix Reasoning	IPO-K	Rasch	+0.0031	0.0007	5/5	-0.0021	0.0005	0/5
+Matrix Reasoning	IPO-K	2PL	+0.0039	0.0009	5/5	-0.0005	0.0002	0/5
+Matrix Reasoning	IPO-K	2.5PL	-0.0046	0.0005	0/5	-0.0006	0.0002	0/5
+Matrix Reasoning	Rasch	2PL	+0.0008	0.0008	4/5	+0.0017	0.0004	5/5
+Matrix Reasoning	Rasch	2.5PL	-0.0076	0.0011	0/5	+0.0016	0.0005	5/5
+Matrix Reasoning	2PL	2.5PL	-0.0085	0.0010	0/5	-0.0001	0.0003	3/5

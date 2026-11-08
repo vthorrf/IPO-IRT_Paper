@@ -36,11 +36,11 @@ The main simulation varies the calibration sample size (*N* = 250, 500, 1,000, 2
 
 ## Reproducing the empirical analyses
 
-The empirical examples use the **International Cognitive Ability Resource (ICAR)** Letter and Number Series and Matrix Reasoning subtests, distributed through the [**Item Response Warehouse (IRW)**][https://itemresponsewarehouse.org/]. The items have six response options; the corresponding chance-response probability is therefore fixed at 1/6. The analyses use the SAPA data and retain respondents with at least one observed response on the corresponding subtest.
+The empirical examples use the **International Cognitive Ability Resource (ICAR)** Letter and Number Series and Matrix Reasoning subtests, distributed through the [**Item Response Warehouse (IRW)**](https://itemresponsewarehouse.org/). The items have six response options; the corresponding chance-response probability is therefore fixed at 1/6. The analyses use the SAPA data and retain respondents with at least one observed response on the corresponding subtest.
 
 ### 1. Prepare the repository
 
-Download the R scripts into the same working directory. The scripts expect the utility file to be named `IPO-IRT Utilities.R` and the other scripts to retain the filenames listed above. The empirical scripts obtain the data through `irw::irw_fetch()`. On first use, IRW access may require authentication through [Redivis][https://redivis.com/]. Retrieved datasets are subsequently cached locally to avoid repeated downloads.
+Download the R scripts into the same working directory. The scripts expect the utility file to be named `IPO-IRT Utilities.R` and the other scripts to retain the filenames listed above. The empirical scripts obtain the data through `irw::irw_fetch()`. On first use, IRW access may require authentication through [Redivis](https://redivis.com/). Retrieved datasets are subsequently cached locally to avoid repeated downloads.
 
 ### 2. Run the main empirical analysis
 
